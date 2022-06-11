@@ -55,7 +55,7 @@
                 <div class="flex flex-col flex-1 px-2 py-6 md:flex-row">
                     <div class="flex-none mx-4 md:mx-0">
                         <a href="#">
-                            <img src="https://source.unsplash.com/200x200/?face&crop=face&v=2" class="w-14 h-14 rounded-xl" alt="avatar">
+                            <img src="{{ $idea->user->avatar }}" class="w-14 h-14 rounded-xl" alt="avatar">
                         </a>
                     </div>
                     <div class="w-full mx-4">
