@@ -34,7 +34,7 @@
                         <div class="text-gray-900">3 Comments</div>
                     </div>
                     <div class="flex items-center space-x-2" x-data="{ isOpen: false }">
-                        <div class="px-4 py-2 font-bold leading-none text-center uppercase bg-gray-200 rounded-full text-xxs w-28 h-7">Open</div>
+                        <div class="px-4 {{ $idea->status->classes }} py-2 font-bold leading-none text-center uppercase rounded-full text-xxs w-28 h-7">{{ $idea->status->name }}</div>
                         <button 
                             x-on:click="isOpen = !isOpen"
                             class="px-4 py-2 text-gray-400 transition duration-150 ease-in bg-gray-100 border rounded-full hover:bg-gray-200 h-7">
